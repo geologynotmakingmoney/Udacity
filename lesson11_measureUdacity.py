@@ -5,12 +5,12 @@
 # list that start with the uppercase 
 # letter 'U'.
 
-def measure_udacity(p):
-    result = 0
-    for e in p:
+def measure_udacity(U):
+    count = 0
+    for e in U:
         if e[0] == 'U':
-            result = result + 1
-    return result
+            count = count + 1
+    return count
 
 
 
