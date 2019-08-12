@@ -17,15 +17,17 @@
 def split_string(source,splitlist):
     output = []
     atsplit = True #At a split point
-    for char in source: #iteral through string by each letter
+    for char in source: #iterate through string by each letter
         if char in splitlist:
             atsplit = True
         else:
             if atsplit:
-                output.append(chart)
+                output.append(char) # append new word after split
                 atsplit = False
             else:
-                output[-1] = output[-1] + char
+                #add charater to last word
+                output[-1] = output[-1] + char  # continue copying characters until next split
+    return output
 
 
 
